@@ -1,0 +1,25 @@
+profile: guarded
+pr_granularity: task
+issue_reference: refs
+permissions:
+  create_backlog_items: false
+  create_github_issues: false
+  create_worktrees: true
+  commit: true
+  push_branch: true
+  create_pr: true
+  comment_on_issue: false
+  comment_on_pr: false
+  mark_pr_ready: false
+  deploy: false
+  merge:
+    enabled: false
+    max_failure_cost: low
+    require_ci: true
+    require_review_if_policy_demands: true
+limits:
+  parallel_tasks: 2
+  open_prs: 2
+  nested_agents_per_task: 1
+  repair_attempts: 1
+  replans: 1
